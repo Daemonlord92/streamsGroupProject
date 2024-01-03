@@ -80,4 +80,12 @@ public class StudentOps {
                 .map(Student::getEmail)
                 .toList();
     }
+
+    //9. **Check if Any Student is Adult:**
+    public static List<Student> getAdultStudents(List<Student> students) {
+        return students
+                .stream()
+                .filter(x -> x.getAge() > 18)
+                .toList();
+    }
 }
