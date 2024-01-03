@@ -46,7 +46,8 @@ public class Main {
             System.out.println(x);
             j.forEach(System.out::println);
         });
-
+        System.out.println("Question 6");
+        System.out.println(StudentOps.maximumAgeOfStudent(students));
     }
 
 }

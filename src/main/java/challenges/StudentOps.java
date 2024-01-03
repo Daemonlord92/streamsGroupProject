@@ -57,4 +57,12 @@ public class StudentOps {
                 .collect(Collectors.groupingBy(Student::getGender));
     }
 
+    //6. **Find Maximum Age:**
+    public static int maximumAgeOfStudent(List<Student> students) {
+        return students
+                .stream()
+                .mapToInt(Student::getAge)
+                .max()
+                .getAsInt();
+    }
 }
