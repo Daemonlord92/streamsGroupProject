@@ -8,6 +8,7 @@ import java.time.LocalDate;
 import java.time.Period;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 public class StudentOps {
@@ -48,4 +49,12 @@ public class StudentOps {
                 .toList();
         names.forEach(System.out::println);
     }
+
+    //5. **Group Students by Gender:**
+    public static Map<String,List<Student>> groupStudentsByGender(List<Student> students) {
+        return students
+                .stream()
+                .collect(Collectors.groupingBy(Student::getGender));
+    }
+
 }

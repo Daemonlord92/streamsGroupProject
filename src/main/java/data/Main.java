@@ -29,7 +29,7 @@ public class Main {
                 .forEach(System.out::println);
 
         System.out.println("Question2 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
-        List<Student> sortedStudents = StudentOps.sortStudentsByAge(getStudentList());
+        List<Student> sortedStudents = StudentOps.sortStudentsByAge(students);
 
         if (sortedStudents != null) {
             sortedStudents.forEach(student -> {
@@ -37,9 +37,16 @@ public class Main {
             });
         }
         System.out.println("Question 3");
-        System.out.println(StudentOps.averageAgeOfStudents(sortedStudents));
+        System.out.println(StudentOps.averageAgeOfStudents(students));
         System.out.println("Question 4");
-        StudentOps.printStudentsNames(sortedStudents);
+        StudentOps.printStudentsNames(students);
+        System.out.println("Question 5");
+        Map<String, List<Student>> mappedStudents = StudentOps.groupStudentsByGender(students);
+        mappedStudents.forEach((x, j) ->{
+            System.out.println(x);
+            j.forEach(System.out::println);
+        });
+
     }
 
 }
