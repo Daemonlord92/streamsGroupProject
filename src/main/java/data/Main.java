@@ -48,6 +48,12 @@ public class Main {
         });
         System.out.println("Question 6");
         System.out.println(StudentOps.maximumAgeOfStudent(students));
+        System.out.println("Question 7");
+        Map<Integer, Student> indexOfStudents = StudentOps.studentListToMap(students);
+        System.out.println(indexOfStudents);
+        System.out.println("Question 8");
+        List<String> emails = StudentOps.getStudentsEmails(students);
+        emails.forEach(System.out::println);
     }
 
 }

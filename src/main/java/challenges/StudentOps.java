@@ -65,4 +65,19 @@ public class StudentOps {
                 .max()
                 .getAsInt();
     }
+
+    //7. **Transform to Map:**
+    public static Map<Integer, Student> studentListToMap(List<Student> students) {
+        return students
+                .stream()
+                .collect(Collectors.toMap(Student::getId, s -> s));
+    }
+
+    //8. **Get Student Emails:**
+    public static List<String> getStudentsEmails(List<Student> students) {
+        return students
+                .stream()
+                .map(Student::getEmail)
+                .toList();
+    }
 }
