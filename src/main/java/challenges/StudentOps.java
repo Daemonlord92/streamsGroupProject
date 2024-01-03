@@ -40,5 +40,12 @@ public class StudentOps {
                 .summaryStatistics()
                 .getAverage();
     }
-
+    //4. **Print Student Names:**
+    public static void printStudentsNames(List<Student> students) {
+        List<String> names = students
+                .stream()
+                .map(x -> x.getFirst_name() + " " + x.getLast_name())
+                .toList();
+        names.forEach(System.out::println);
+    }
 }

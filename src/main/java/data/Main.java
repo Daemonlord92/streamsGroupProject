@@ -38,6 +38,8 @@ public class Main {
         }
         System.out.println("Question 3");
         System.out.println(StudentOps.averageAgeOfStudents(sortedStudents));
+        System.out.println("Question 4");
+        StudentOps.printStudentsNames(sortedStudents);
     }
 
 }
