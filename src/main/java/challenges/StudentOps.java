@@ -30,6 +30,15 @@ public class StudentOps {
         return  students.stream()
                     .sorted(Comparator.comparing(Student::getAge))
                     .toList();
-        }
+    }
+
+    //3. **Calculate Average Age:**
+    public static int averageAgeOfStudents(List<Student> students) {
+        return (int) students
+                .stream()
+                .mapToInt(Student::getAge)
+                .summaryStatistics()
+                .getAverage();
+    }
 
 }
