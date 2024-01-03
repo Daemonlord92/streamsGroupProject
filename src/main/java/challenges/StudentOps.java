@@ -88,4 +88,14 @@ public class StudentOps {
                 .filter(x -> x.getAge() > 18)
                 .toList();
     }
+
+    //10. **Count Students by Gender:**
+    public static void countStudentsByGender(List<Student> students) {
+        Map<String, List<Student>> mappedStudents = students
+                .stream()
+                .collect(Collectors.groupingBy(Student::getGender));
+        mappedStudents.forEach((x, j) -> {
+            System.out.println(x + " " + j.stream().count());
+        });
+    }
 }

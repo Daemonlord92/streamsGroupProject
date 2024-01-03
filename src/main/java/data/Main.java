@@ -57,6 +57,8 @@ public class Main {
         System.out.println("Question 9");
         List<Student> adultStudents = StudentOps.getAdultStudents(students);
         adultStudents.forEach(System.out::println);
+        System.out.println("Question 10");
+        StudentOps.countStudentsByGender(students);
     }
 
 }
