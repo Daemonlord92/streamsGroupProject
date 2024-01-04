@@ -124,4 +124,11 @@ public class StudentOps {
                 .mapToInt(Student::getAge)
                 .sum();
     }
+
+    //14. **Check if All Students are Adults:**
+    public static boolean areAllStudentsAdult(List<Student> students) {
+        long studentCount = students.stream().count();
+        long adultStudentCount = students.stream().filter(x-> x.getAge() > 17).count();
+        return studentCount == adultStudentCount;
+    }
 }
