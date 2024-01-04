@@ -59,6 +59,8 @@ public class Main {
         adultStudents.forEach(System.out::println);
         System.out.println("Question 10");
         StudentOps.countStudentsByGender(students);
+        System.out.println("Question 11");
+        System.out.println(StudentOps.getYoungestFemaleStudent(students));
     }
 
 }

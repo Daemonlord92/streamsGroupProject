@@ -98,4 +98,13 @@ public class StudentOps {
             System.out.println(x + " " + j.stream().count());
         });
     }
+
+    //11. **Find Youngest Female Student:**
+    public static Student getYoungestFemaleStudent(List<Student> students) {
+        return students
+                .stream()
+                .filter(x -> x.getGender().equalsIgnoreCase("female"))
+                .min(Comparator.comparing(Student::getAge))
+                .orElse(null);
+    }
 }
