@@ -61,6 +61,8 @@ public class Main {
         StudentOps.countStudentsByGender(students);
         System.out.println("Question 11");
         System.out.println(StudentOps.getYoungestFemaleStudent(students));
+        System.out.println("Question 12");
+        System.out.println(StudentOps.joinStudentsNames(students));
     }
 
 }

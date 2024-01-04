@@ -107,4 +107,13 @@ public class StudentOps {
                 .min(Comparator.comparing(Student::getAge))
                 .orElse(null);
     }
+
+    //12. **Join Student Names:**
+    public static String joinStudentsNames(List<Student> students) {
+        StringBuilder nameString = new StringBuilder();
+        students
+                .stream()
+                .forEach(x -> nameString.append(x.getFirst_name()).append(" "));
+        return nameString.toString();
+    }
 }
