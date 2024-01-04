@@ -116,4 +116,12 @@ public class StudentOps {
                 .forEach(x -> nameString.append(x.getFirst_name()).append(" "));
         return nameString.toString();
     }
+
+    //13. **Calculate Age Sum:**
+    public static int sumOfStudentsAges(List<Student> students) {
+        return students
+                .stream()
+                .mapToInt(Student::getAge)
+                .sum();
+    }
 }

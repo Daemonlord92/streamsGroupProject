@@ -63,6 +63,8 @@ public class Main {
         System.out.println(StudentOps.getYoungestFemaleStudent(students));
         System.out.println("Question 12");
         System.out.println(StudentOps.joinStudentsNames(students));
+        System.out.println("Question 13");
+        System.out.println(StudentOps.sumOfStudentsAges(students));
     }
 
 }
