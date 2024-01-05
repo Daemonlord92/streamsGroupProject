@@ -71,6 +71,9 @@ public class Main {
         System.out.println(StudentOps.findTheOldestStudent(students));
         System.out.println("Question 16");
         StudentOps.studentsFirstNameToUpper(students).forEach(System.out::println);
+        System.out.println("Question 17");
+        System.out.println(StudentOps.findStudentById(students, 66));
+        System.out.println(StudentOps.findStudentById(students, 15));
     }
 
 }

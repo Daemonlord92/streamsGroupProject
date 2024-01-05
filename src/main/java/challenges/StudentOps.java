@@ -146,4 +146,13 @@ public class StudentOps {
                 .map(x -> x.getFirst_name().toUpperCase())
                 .toList();
     }
+
+    //17. **Find Student by ID:**
+    public static Student findStudentById(List<Student> students, int id) {
+        return students
+                .stream()
+                .filter(x -> x.getId() == id)
+                .findFirst()
+                .orElse(null);
+    }
 }
