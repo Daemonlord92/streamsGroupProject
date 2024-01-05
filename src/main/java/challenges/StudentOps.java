@@ -138,4 +138,12 @@ public class StudentOps {
                 .max(Comparator.comparing(Student::getAge))
                 .get();
     }
+
+    //16. **Convert to Uppercase:**
+    public static List<String> studentsFirstNameToUpper(List<Student> students) {
+        return students
+                .stream()
+                .map(x -> x.getFirst_name().toUpperCase())
+                .toList();
+    }
 }

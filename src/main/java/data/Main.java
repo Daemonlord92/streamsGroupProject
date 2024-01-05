@@ -70,6 +70,7 @@ public class Main {
         System.out.println("Question 15");
         System.out.println(StudentOps.findTheOldestStudent(students));
         System.out.println("Question 16");
+        StudentOps.studentsFirstNameToUpper(students).forEach(System.out::println);
     }
 
 }
