@@ -176,4 +176,10 @@ public class StudentOps {
                     y.forEach(System.out::println);
                 });
     }
+
+    //20. **Calculate Age Standard Deviation:**
+    public static void calculateAgeStandardDeviation(List<Student> students) {
+        double mean = (students.stream().mapToInt(Student::getAge).sum()/students.stream().count());
+        System.out.println(Math.sqrt(students.stream().mapToDouble(s -> Math.pow(s.getAge() - mean, 2)).average().orElse(0.0)));
+    }
 }

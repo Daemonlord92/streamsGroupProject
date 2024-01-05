@@ -78,6 +78,8 @@ public class Main {
         StudentOps.computeAgeDistribution(students);
         System.out.println("Question 19");
         StudentOps.groupStudentsByAge(students);
+        System.out.println("Question 20");
+        StudentOps.calculateAgeStandardDeviation(students);
     }
 
 }
