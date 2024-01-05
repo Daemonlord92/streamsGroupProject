@@ -131,4 +131,11 @@ public class StudentOps {
         long adultStudentCount = students.stream().filter(x-> x.getAge() > 17).count();
         return studentCount == adultStudentCount;
     }
+    //15. **Find Oldest Student:**
+    public static Student findTheOldestStudent(List<Student> students) {
+        return students
+                .stream()
+                .max(Comparator.comparing(Student::getAge))
+                .get();
+    }
 }

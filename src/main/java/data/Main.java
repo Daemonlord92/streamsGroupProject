@@ -67,6 +67,9 @@ public class Main {
         System.out.println(StudentOps.sumOfStudentsAges(students));
         System.out.println("Question 14");
         System.out.println(StudentOps.areAllStudentsAdult(students));
+        System.out.println("Question 15");
+        System.out.println(StudentOps.findTheOldestStudent(students));
+        System.out.println("Question 16");
     }
 
 }
