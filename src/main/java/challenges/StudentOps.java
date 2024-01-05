@@ -155,4 +155,15 @@ public class StudentOps {
                 .findFirst()
                 .orElse(null);
     }
+
+    //18. **Compute Age Distribution:**
+    public static void computeAgeDistribution(List<Student> students) {
+        students
+                .stream()
+                .collect(Collectors.groupingBy(Student::getAge))
+                .forEach((x,y) -> {
+                    System.out.println("Age " + x + ": " + y.stream().count());
+                });
+    }
+
 }
