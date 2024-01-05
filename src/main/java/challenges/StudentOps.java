@@ -166,4 +166,14 @@ public class StudentOps {
                 });
     }
 
+    //19. **Group Students by Age:**
+    public static void groupStudentsByAge(List<Student> students) {
+        students
+                .stream()
+                .collect(Collectors.groupingBy(Student::getAge))
+                .forEach((x, y) -> {
+                    System.out.println("Age "+x+ ":");
+                    y.forEach(System.out::println);
+                });
+    }
 }

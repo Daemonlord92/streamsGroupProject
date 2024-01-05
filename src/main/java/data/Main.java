@@ -76,6 +76,8 @@ public class Main {
         System.out.println(StudentOps.findStudentById(students, 15));
         System.out.println("Question 18");
         StudentOps.computeAgeDistribution(students);
+        System.out.println("Question 19");
+        StudentOps.groupStudentsByAge(students);
     }
 
 }
