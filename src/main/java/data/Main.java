@@ -90,6 +90,8 @@ public class Main {
         System.out.println(mapToModelNames(cars));
         System.out.println("Question 5 Cars");
         System.out.println(mapToUpperCaseMakes(cars));
+        System.out.println("Question 6 Cars");
+        System.out.println(sortByYear(cars));
     }
 
 }

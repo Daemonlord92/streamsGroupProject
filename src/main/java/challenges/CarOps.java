@@ -48,4 +48,11 @@ public class CarOps {
                 .map(x -> x.getMake().toUpperCase())
                 .collect(Collectors.toSet());
     }
+
+    //6. **Sort by Year:**
+    public static List<Car> sortByYear(List<Car> cars) {
+        return cars
+                .stream().sorted(Comparator.comparing(Car::getYear))
+                .toList();
+    }
 }
