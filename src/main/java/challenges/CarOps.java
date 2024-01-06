@@ -264,4 +264,12 @@ public class CarOps {
                     return carString.toString();
                 }).toList();
     }
+
+    //30. **Find the Newest Car:**
+    public static Car findNewestCar(List<Car> cars) {
+        return cars
+                .stream()
+                .max(Comparator.comparing(Car::getYear))
+                .orElse(null);
+    }
 }

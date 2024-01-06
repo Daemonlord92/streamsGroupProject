@@ -141,6 +141,8 @@ public class Main {
         averagePriceByMake(cars);
         System.out.println("Question 29 Cars");
         concatenateAllCarDetails(cars).forEach(System.out::println);
+        System.out.println("Question 30 Cars");
+        System.out.println(findNewestCar(cars));
     }
 
 }
