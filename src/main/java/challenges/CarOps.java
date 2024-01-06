@@ -117,4 +117,12 @@ public class CarOps {
                 .filter(x -> x.getColor().equalsIgnoreCase(color))
                 .toList();
     }
+
+    //15. **All Cars are Expensive:**
+    public static List<Car> allCarsAreExpensive(List<Car> cars) {
+        return cars
+                .stream()
+                .filter(x -> x.getPrice() > 50000)
+                .toList();
+    }
 }
