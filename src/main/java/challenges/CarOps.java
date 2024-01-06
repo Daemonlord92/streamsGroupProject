@@ -32,4 +32,12 @@ public class CarOps {
                 .filter(x -> x.getPrice() >= price - 1000.0 && x.getPrice() <= price + 1000.0)
                 .toList();
     }
+
+    //4. **Map to Model Names:**
+    public static List<String> mapToModelNames(List<Car> cars) {
+        return cars
+                .stream()
+                .map(Car::getModel)
+                .toList();
+    }
 }
