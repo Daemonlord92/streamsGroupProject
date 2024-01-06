@@ -177,4 +177,10 @@ public class CarOps {
                 .findFirst()
                 .orElse(null);
     }
+
+    //22. **Find Any Car:**
+    public static Car findAnyCar(List<Car> cars) {
+        Random random = new Random();
+        return cars.get(random.nextInt(cars.size()));
+    }
 }

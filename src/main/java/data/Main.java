@@ -125,6 +125,8 @@ public class Main {
         concatenateMakeAndModel(cars).forEach(System.out::println);
         System.out.println("Question 21 Cars");
         System.out.println(findFirstCar(cars));
+        System.out.println("Question 22 Cars");
+        System.out.println(findAnyCar(cars));
     }
 
 }
