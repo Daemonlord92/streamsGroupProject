@@ -80,6 +80,8 @@ public class Main {
         StudentOps.groupStudentsByAge(students);
         System.out.println("Question 20");
         StudentOps.calculateAgeStandardDeviation(students);
+        System.out.println("Question 1 Cars");
+        System.out.println(filterByMake(cars, "Ford"));
     }
 
 }
