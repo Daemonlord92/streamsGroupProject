@@ -129,6 +129,8 @@ public class Main {
         System.out.println(findAnyCar(cars));
         System.out.println("Question 23 Cars");
         removeDuplicates(cars).forEach(System.out::println);
+        System.out.println("Question 24 Cars");
+        partitionCarsByPrice(cars);
     }
 
 }

@@ -192,4 +192,14 @@ public class CarOps {
                 .toList();
     }
 
+    //24. **Partition Cars by Price:**
+    public static void partitionCarsByPrice(List<Car> cars) {
+            cars
+                .stream()
+                .collect(Collectors.groupingBy(x -> x.getPrice() > 50000))
+                .forEach((x, y) -> {
+                    System.out.println(x);
+                    y.forEach(System.out::println);
+                });
+    }
 }
