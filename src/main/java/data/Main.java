@@ -107,6 +107,8 @@ public class Main {
         countCarsByMake(cars);
         System.out.println("Question 12 Cars");
         System.out.println(averagePrice(cars));
+        System.out.println("Question 13 Cars");
+        System.out.println(sumOfPrices(cars));
     }
 
 }

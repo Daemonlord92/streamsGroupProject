@@ -101,4 +101,12 @@ public class CarOps {
                 .average()
                 .orElse(0.0);
     }
+
+    //13. **Sum of Prices:**
+    public static double sumOfPrices(List<Car> cars) {
+        return cars
+                .stream()
+                .mapToDouble(Car::getPrice)
+                .sum();
+    }
 }
