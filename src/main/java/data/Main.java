@@ -92,6 +92,8 @@ public class Main {
         System.out.println(mapToUpperCaseMakes(cars));
         System.out.println("Question 6 Cars");
         System.out.println(sortByYear(cars));
+        System.out.println("Question 7 Cars");
+        System.out.println(sortByPrice(cars));
     }
 
 }

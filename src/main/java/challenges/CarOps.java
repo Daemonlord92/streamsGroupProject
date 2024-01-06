@@ -55,4 +55,11 @@ public class CarOps {
                 .stream().sorted(Comparator.comparing(Car::getYear))
                 .toList();
     }
+    //7. **Sort by Price (descending):**
+    public static List<Car> sortByPrice(List<Car> cars) {
+        return cars
+                .stream()
+                .sorted(Comparator.comparing(Car::getPrice))
+                .toList().reversed();
+    }
 }
