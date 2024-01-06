@@ -70,4 +70,11 @@ public class CarOps {
                 .max(Comparator.comparing(Car::getPrice))
                 .orElse(null);
     }
+    //9. **Get the Lowest Priced Car:**
+    public static Car getLowestPricedCar(List<Car> cars) {
+        return cars
+                .stream()
+                .min(Comparator.comparing(Car::getPrice))
+                .orElse(null);
+    }
 }

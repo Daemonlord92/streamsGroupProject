@@ -96,6 +96,8 @@ public class Main {
         System.out.println(sortByPrice(cars));
         System.out.println("Question 8 Cars");
         System.out.println(getTheHighestPricedCar(cars));
+        System.out.println("Question 9 Cars");
+        System.out.println(getLowestPricedCar(cars));
     }
 
 }
