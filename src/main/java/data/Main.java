@@ -98,6 +98,11 @@ public class Main {
         System.out.println(getTheHighestPricedCar(cars));
         System.out.println("Question 9 Cars");
         System.out.println(getLowestPricedCar(cars));
+        System.out.println("Question 10 Cars");
+        groupByMake(cars).forEach((x, y) -> {
+            System.out.println(x +":");
+            y.forEach(System.out::println);
+        });
     }
 
 }

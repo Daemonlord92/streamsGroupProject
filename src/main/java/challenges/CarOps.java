@@ -77,4 +77,11 @@ public class CarOps {
                 .min(Comparator.comparing(Car::getPrice))
                 .orElse(null);
     }
+
+    //10. **Group by Make:**
+    public static Map<String, List<Car>> groupByMake(List<Car> cars) {
+        return cars
+                .stream()
+                .collect(Collectors.groupingBy(Car::getMake));
+    }
 }
