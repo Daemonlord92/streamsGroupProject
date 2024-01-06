@@ -121,6 +121,8 @@ public class Main {
         limitNCars(cars, 10).forEach(System.out::println);
         System.out.println("Question 19 Cars");
         distinctColors(cars).forEach(System.out::println);
+        System.out.println("Question 20 Cars");
+        concatenateMakeAndModel(cars).forEach(System.out::println);
     }
 
 }

@@ -161,4 +161,12 @@ public class CarOps {
                 .distinct()
                 .toList();
     }
+
+    //20. **Concatenate Make and Model:**
+    public static List<String> concatenateMakeAndModel(List<Car> cars) {
+        return cars
+                .stream()
+                .map(x -> x.getMake() + " " + x.getModel())
+                .toList();
+    }
 }
