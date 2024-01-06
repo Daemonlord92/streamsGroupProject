@@ -88,6 +88,8 @@ public class Main {
         System.out.println(filterByPrice(cars, 58424.51));
         System.out.println("Question 4 Cars");
         System.out.println(mapToModelNames(cars));
+        System.out.println("Question 5 Cars");
+        System.out.println(mapToUpperCaseMakes(cars));
     }
 
 }

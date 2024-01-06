@@ -40,4 +40,12 @@ public class CarOps {
                 .map(Car::getModel)
                 .toList();
     }
+
+    //5. **Map to Upper Case Makes:**
+    public static Set<String> mapToUpperCaseMakes(List<Car> cars) {
+        return cars
+                .stream()
+                .map(x -> x.getMake().toUpperCase())
+                .collect(Collectors.toSet());
+    }
 }
