@@ -84,6 +84,8 @@ public class Main {
         System.out.println(filterByMake(cars, "Ford"));
         System.out.println("Question 2 Cars");
         System.out.println(filterByYear(cars, 1995));
+        System.out.println("Question 3 Cars");
+        System.out.println(filterByPrice(cars, 58424.51));
     }
 
 }

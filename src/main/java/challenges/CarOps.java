@@ -25,4 +25,11 @@ public class CarOps {
                 .toList();
     }
 
+    //3. **Filter by Price:**
+    public static List<Car> filterByPrice(List<Car> cars, double price) {
+        return cars
+                .stream()
+                .filter(x -> x.getPrice() >= price - 1000.0 && x.getPrice() <= price + 1000.0)
+                .toList();
+    }
 }
