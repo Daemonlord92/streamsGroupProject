@@ -135,6 +135,8 @@ public class Main {
         calculateTotalPriceByMake(cars);
         System.out.println("Question 26 Cars");
         System.out.println(joinCarNamesIntoAString(cars));
+        System.out.println("Question 27 Cars");
+        peekAndPrint(cars);
     }
 
 }

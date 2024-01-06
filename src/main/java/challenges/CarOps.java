@@ -224,4 +224,11 @@ public class CarOps {
         return names.toString();
     }
 
+    //27. **Peek and Print:**
+    public static void peekAndPrint(List<Car> cars) {
+        cars
+                .stream()
+                .peek(System.out::println)
+                .toList();
+    }
 }
