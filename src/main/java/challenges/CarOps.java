@@ -242,4 +242,26 @@ public class CarOps {
                     System.out.println(y.stream().mapToDouble(Car::getPrice).average().orElse(0.0));
                 });
     }
+
+    //29. **Concatenate All Car Details:**
+    public static List<String> concatenateAllCarDetails(List<Car> cars) {
+        return cars
+                .stream()
+                .map(x -> {
+                    StringBuilder carString = new StringBuilder();
+                    carString.append("Car Id: ")
+                            .append(x.getId())
+                            .append(", Make: ")
+                            .append(x.getMake())
+                            .append(", Model: ")
+                            .append(x.getModel())
+                            .append(", Year: ")
+                            .append(x.getYear())
+                            .append(", Color: ")
+                            .append(x.getColor())
+                            .append(", Price: $")
+                            .append(x.getPrice());
+                    return carString.toString();
+                }).toList();
+    }
 }

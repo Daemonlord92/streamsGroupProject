@@ -139,6 +139,8 @@ public class Main {
         peekAndPrint(cars);
         System.out.println("Question 28 Cars");
         averagePriceByMake(cars);
+        System.out.println("Question 29 Cars");
+        concatenateAllCarDetails(cars).forEach(System.out::println);
     }
 
 }
