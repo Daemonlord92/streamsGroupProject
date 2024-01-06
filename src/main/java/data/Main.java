@@ -109,6 +109,8 @@ public class Main {
         System.out.println(averagePrice(cars));
         System.out.println("Question 13 Cars");
         System.out.println(sumOfPrices(cars));
+        System.out.println("Question 14 Cars");
+        anyCarWithColor(cars, "blue").forEach(System.out::println);
     }
 
 }

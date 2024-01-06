@@ -109,4 +109,12 @@ public class CarOps {
                 .mapToDouble(Car::getPrice)
                 .sum();
     }
+
+    //14. **Any Car with Blue Color:**
+    public static List<Car> anyCarWithColor(List<Car> cars, String color) {
+        return cars
+                .stream()
+                .filter(x -> x.getColor().equalsIgnoreCase(color))
+                .toList();
+    }
 }
