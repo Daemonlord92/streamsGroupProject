@@ -125,4 +125,14 @@ public class CarOps {
                 .filter(x -> x.getPrice() > 50000)
                 .toList();
     }
+
+    //16. **None Match the Condition:**
+    public static List<Car> matchTheCondition(List<Car> cars, String make, String model, double price) {
+        return cars
+                .stream()
+                .filter(x -> x.getMake().equalsIgnoreCase(make)
+                        && x.getModel().equalsIgnoreCase(model)
+                        && x.getPrice().equals(price))
+                .toList();
+    }
 }

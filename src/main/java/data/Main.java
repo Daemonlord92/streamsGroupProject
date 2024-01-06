@@ -113,6 +113,8 @@ public class Main {
         anyCarWithColor(cars, "blue").forEach(System.out::println);
         System.out.println("Question 15 Cars");
         allCarsAreExpensive(cars).forEach(System.out::println);
+        System.out.println("Question 16 Cars");
+        System.out.println(matchTheCondition(cars, "Ford", "1500", 55000));
     }
 
 }
