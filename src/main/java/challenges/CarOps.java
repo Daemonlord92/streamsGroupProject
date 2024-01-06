@@ -1,6 +1,7 @@
 package challenges;
 
 import domain.Car;
+import org.checkerframework.checker.units.qual.C;
 
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
@@ -141,6 +142,14 @@ public class CarOps {
         return cars
                 .stream()
                 .skip(n)
+                .toList();
+    }
+
+    //18. **Limit to N Cars:**
+    public static List<Car> limitNCars(List<Car> cars, int n) {
+        return cars
+                .stream()
+                .limit(n)
                 .toList();
     }
 }

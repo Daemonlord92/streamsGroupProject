@@ -117,6 +117,8 @@ public class Main {
         System.out.println(matchTheCondition(cars, "Ford", "1500", 55000));
         System.out.println("Question 17 Cars");
         skipNCars(cars, 200).forEach(System.out::println);
+        System.out.println("Question 18 Cars");
+        limitNCars(cars, 10).forEach(System.out::println);
     }
 
 }
