@@ -119,6 +119,8 @@ public class Main {
         skipNCars(cars, 200).forEach(System.out::println);
         System.out.println("Question 18 Cars");
         limitNCars(cars, 10).forEach(System.out::println);
+        System.out.println("Question 19 Cars");
+        distinctColors(cars).forEach(System.out::println);
     }
 
 }

@@ -152,4 +152,13 @@ public class CarOps {
                 .limit(n)
                 .toList();
     }
+
+    //19. **Distinct Colors:**
+    public static List<String> distinctColors(List<Car> cars) {
+        return cars
+                .stream()
+                .map(x -> x.getColor())
+                .distinct()
+                .toList();
+    }
 }
