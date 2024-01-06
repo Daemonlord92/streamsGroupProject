@@ -82,6 +82,8 @@ public class Main {
         StudentOps.calculateAgeStandardDeviation(students);
         System.out.println("Question 1 Cars");
         System.out.println(filterByMake(cars, "Ford"));
+        System.out.println("Question 2 Cars");
+        System.out.println(filterByYear(cars, 1995));
     }
 
 }

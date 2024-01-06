@@ -16,4 +16,13 @@ public class CarOps {
                 .filter(x -> x.getMake().equalsIgnoreCase(make))
                 .toList();
     }
+
+    //2. **Filter by Year:**
+    public static List<Car> filterByYear(List<Car> cars, int year) {
+        return cars
+                .stream()
+                .filter(x -> x.getYear().equals(year))
+                .toList();
+    }
+
 }
