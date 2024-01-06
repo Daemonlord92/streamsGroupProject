@@ -84,4 +84,12 @@ public class CarOps {
                 .stream()
                 .collect(Collectors.groupingBy(Car::getMake));
     }
+
+    //11. **Count Cars by Make:**
+    public static void countCarsByMake(List<Car> cars) {
+        cars
+                .stream()
+                .collect(Collectors.groupingBy(Car::getMake))
+                .forEach((x, y) -> System.out.println(x + " " + y.stream().count()));
+    }
 }

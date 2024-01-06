@@ -103,6 +103,8 @@ public class Main {
             System.out.println(x +":");
             y.forEach(System.out::println);
         });
+        System.out.println("Question 11 Cars");
+        countCarsByMake(cars);
     }
 
 }
