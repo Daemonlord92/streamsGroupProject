@@ -133,6 +133,8 @@ public class Main {
         partitionCarsByPrice(cars);
         System.out.println("Question 25 Cars");
         calculateTotalPriceByMake(cars);
+        System.out.println("Question 26 Cars");
+        System.out.println(joinCarNamesIntoAString(cars));
     }
 
 }

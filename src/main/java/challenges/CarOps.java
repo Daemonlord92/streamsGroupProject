@@ -213,4 +213,15 @@ public class CarOps {
                     System.out.println(y.stream().mapToDouble(Car::getPrice).sum());
                 });
     }
+
+    //26. **Join Car Names into a String:**
+    public static String joinCarNamesIntoAString(List<Car> cars) {
+        StringBuilder names = new StringBuilder();
+        cars
+                .forEach(x -> {
+                    names.append(x.getMake()).append(" ").append(x.getModel()).append(" ");
+                });
+        return names.toString();
+    }
+
 }
