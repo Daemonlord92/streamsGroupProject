@@ -92,4 +92,13 @@ public class CarOps {
                 .collect(Collectors.groupingBy(Car::getMake))
                 .forEach((x, y) -> System.out.println(x + " " + y.stream().count()));
     }
+
+    //12. **Average Price:**
+    public static double averagePrice(List<Car> cars) {
+        return cars
+                .stream()
+                .mapToDouble(Car::getPrice)
+                .average()
+                .orElse(0.0);
+    }
 }

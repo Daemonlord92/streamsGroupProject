@@ -105,6 +105,8 @@ public class Main {
         });
         System.out.println("Question 11 Cars");
         countCarsByMake(cars);
+        System.out.println("Question 12 Cars");
+        System.out.println(averagePrice(cars));
     }
 
 }
