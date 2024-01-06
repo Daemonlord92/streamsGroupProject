@@ -62,4 +62,12 @@ public class CarOps {
                 .sorted(Comparator.comparing(Car::getPrice))
                 .toList().reversed();
     }
+
+    //8. **Get the Highest Priced Car:**
+    public static Car getTheHighestPricedCar(List<Car> cars) {
+        return cars
+                .stream()
+                .max(Comparator.comparing(Car::getPrice))
+                .orElse(null);
+    }
 }
