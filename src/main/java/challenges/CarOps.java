@@ -231,4 +231,15 @@ public class CarOps {
                 .peek(System.out::println)
                 .toList();
     }
+
+    //28. **Average Price by Make:**
+    public static void averagePriceByMake(List<Car> cars) {
+        cars
+                .stream()
+                .collect(Collectors.groupingBy(Car::getMake))
+                .forEach((x,y) -> {
+                    System.out.println(x);
+                    System.out.println(y.stream().mapToDouble(Car::getPrice).average().orElse(0.0));
+                });
+    }
 }

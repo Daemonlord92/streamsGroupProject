@@ -137,6 +137,8 @@ public class Main {
         System.out.println(joinCarNamesIntoAString(cars));
         System.out.println("Question 27 Cars");
         peekAndPrint(cars);
+        System.out.println("Question 28 Cars");
+        averagePriceByMake(cars);
     }
 
 }
