@@ -127,6 +127,8 @@ public class Main {
         System.out.println(findFirstCar(cars));
         System.out.println("Question 22 Cars");
         System.out.println(findAnyCar(cars));
+        System.out.println("Question 23 Cars");
+        removeDuplicates(cars).forEach(System.out::println);
     }
 
 }

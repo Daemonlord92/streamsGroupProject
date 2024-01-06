@@ -1,5 +1,7 @@
 package domain;
 
+import java.util.Objects;
+
 public class Car {
     private final Integer id;
     private final String make;
@@ -51,5 +53,18 @@ public class Car {
                 ", price=" + price +
                 ", color='" + color + '\'' +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        Car car = (Car) obj;
+        return Objects.equals(make, car.make) && Objects.equals(model, car.model);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(make, model);
     }
 }

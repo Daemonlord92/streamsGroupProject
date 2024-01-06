@@ -183,4 +183,13 @@ public class CarOps {
         Random random = new Random();
         return cars.get(random.nextInt(cars.size()));
     }
+
+    //23. **Remove Duplicates:**
+    public static List<Car> removeDuplicates(List<Car> cars) {
+        return cars
+                .stream()
+                .distinct()
+                .toList();
+    }
+
 }
