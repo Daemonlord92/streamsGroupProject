@@ -202,4 +202,15 @@ public class CarOps {
                     y.forEach(System.out::println);
                 });
     }
+
+    //25. **Calculate Total Price by Make:**
+    public static void calculateTotalPriceByMake(List<Car> cars) {
+        cars
+                .stream()
+                .collect(Collectors.groupingBy(Car::getMake))
+                .forEach((x,y) -> {
+                    System.out.println(x);
+                    System.out.println(y.stream().mapToDouble(Car::getPrice).sum());
+                });
+    }
 }

@@ -131,6 +131,8 @@ public class Main {
         removeDuplicates(cars).forEach(System.out::println);
         System.out.println("Question 24 Cars");
         partitionCarsByPrice(cars);
+        System.out.println("Question 25 Cars");
+        calculateTotalPriceByMake(cars);
     }
 
 }
