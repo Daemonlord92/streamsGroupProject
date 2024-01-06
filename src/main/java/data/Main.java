@@ -115,6 +115,8 @@ public class Main {
         allCarsAreExpensive(cars).forEach(System.out::println);
         System.out.println("Question 16 Cars");
         System.out.println(matchTheCondition(cars, "Ford", "1500", 55000));
+        System.out.println("Question 17 Cars");
+        skipNCars(cars, 200).forEach(System.out::println);
     }
 
 }

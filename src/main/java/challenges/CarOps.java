@@ -135,4 +135,12 @@ public class CarOps {
                         && x.getPrice().equals(price))
                 .toList();
     }
+
+    //17. **Skip First N Cars:**
+    public static List<Car> skipNCars(List<Car> cars, int n) {
+        return cars
+                .stream()
+                .skip(n)
+                .toList();
+    }
 }
