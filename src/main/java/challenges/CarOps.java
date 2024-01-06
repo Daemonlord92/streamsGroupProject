@@ -169,4 +169,12 @@ public class CarOps {
                 .map(x -> x.getMake() + " " + x.getModel())
                 .toList();
     }
+
+    //21. **Find First Car:**
+    public static Car findFirstCar(List<Car> cars) {
+        return cars
+                .stream()
+                .findFirst()
+                .orElse(null);
+    }
 }

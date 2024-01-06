@@ -123,6 +123,8 @@ public class Main {
         distinctColors(cars).forEach(System.out::println);
         System.out.println("Question 20 Cars");
         concatenateMakeAndModel(cars).forEach(System.out::println);
+        System.out.println("Question 21 Cars");
+        System.out.println(findFirstCar(cars));
     }
 
 }
