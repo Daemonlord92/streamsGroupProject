@@ -64,5 +64,11 @@ public class StudentOpsTest {
             int res = StudentOps.maximumAgeOfStudent(students);
             Assertions.assertEquals(54, res);
         }
+
+        @Test
+        void shouldReturnAMap() {
+            Map<Integer, Student> mapped = StudentOps.studentListToMap(students);
+            Assertions.assertNotNull(mapped);
+        }
     }
 
