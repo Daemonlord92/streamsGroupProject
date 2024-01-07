@@ -58,5 +58,11 @@ public class StudentOpsTest {
             Map<String, List<Student>> groupedStudents = StudentOps.groupStudentsByGender(students);
             Assertions.assertEquals(null, groupedStudents.get("Asexual"));
         }
+
+        @Test
+        void ShouldReturnIntForMaxAgeOfStudents() {
+            int res = StudentOps.maximumAgeOfStudent(students);
+            Assertions.assertEquals(54, res);
+        }
     }
 
