@@ -70,5 +70,12 @@ public class StudentOpsTest {
             Map<Integer, Student> mapped = StudentOps.studentListToMap(students);
             Assertions.assertNotNull(mapped);
         }
+
+        @Test
+        void shouldReturnAListWithEmailsInIt() {
+            List<String> emails = StudentOps.getStudentsEmails(students);
+            Assertions.assertNotNull(emails);
+            Assertions.assertEquals("kpadden0@utexas.edu", emails.getFirst());
+        }
     }
 
