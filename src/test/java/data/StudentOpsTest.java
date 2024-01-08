@@ -98,5 +98,13 @@ public class StudentOpsTest {
             Assertions.assertEquals("Kaitlyn", names[0]);
             Assertions.assertEquals("Melvyn", names[names.length-1]);
         }
+
+        @Test
+        void shouldReturnASumOfTheAgesOfStudents() {
+            int sum = StudentOps.sumOfStudentsAges(students);
+            Assertions.assertEquals(17553, sum);
+        }
+
+
     }
 
