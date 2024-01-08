@@ -116,5 +116,13 @@ public class StudentOpsTest {
             Student student = StudentOps.findTheOldestStudent(students);
             Assertions.assertEquals(54, student.getAge());
         }
+
+        @Test
+        void shouldReturnAListOfNamesThatAreUpperCased() {
+            List<String> names = StudentOps.studentsFirstNameToUpper(students);
+            Assertions.assertEquals("Kaitlyn".toUpperCase(), names.getFirst());
+            Assertions.assertEquals("Melvyn".toUpperCase(), names.getLast());
+        }
+
     }
 
