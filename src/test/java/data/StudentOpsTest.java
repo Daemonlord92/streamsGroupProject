@@ -84,5 +84,12 @@ public class StudentOpsTest {
             List<Student> adults = StudentOps.getAdultStudents(students);
             Assertions.assertTrue(adults.stream().allMatch(x-> x.getAge() > 17));
         }
+
+        @Test
+        void shouldReturnStudentThatIsTheYoungestFemale() {
+            Student youngestStudent = StudentOps.getYoungestFemaleStudent(students);
+            Assertions.assertEquals("Female", youngestStudent.getGender());
+            Assertions.assertEquals(17, youngestStudent.getAge());
+        }
     }
 
