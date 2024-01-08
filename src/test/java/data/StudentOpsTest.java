@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
+import static org.assertj.core.api.Assertions.as;
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
@@ -76,6 +77,12 @@ public class StudentOpsTest {
             List<String> emails = StudentOps.getStudentsEmails(students);
             Assertions.assertNotNull(emails);
             Assertions.assertEquals("kpadden0@utexas.edu", emails.getFirst());
+        }
+
+        @Test
+        void shouldReturnListWithAdultsInIt() {
+            List<Student> adults = StudentOps.getAdultStudents(students);
+            Assertions.assertTrue(adults.stream().allMatch(x-> x.getAge() > 17));
         }
     }
 

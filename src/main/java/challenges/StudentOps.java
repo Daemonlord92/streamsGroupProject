@@ -90,13 +90,14 @@ public class StudentOps {
     }
 
     //10. **Count Students by Gender:**
-    public static void countStudentsByGender(List<Student> students) {
+    public static Map<String, List<Student>> countStudentsByGender(List<Student> students) {
         Map<String, List<Student>> mappedStudents = students
                 .stream()
                 .collect(Collectors.groupingBy(Student::getGender));
         mappedStudents.forEach((x, j) -> {
             System.out.println(x + " " + j.stream().count());
         });
+        return mappedStudents;
     }
 
     //11. **Find Youngest Female Student:**
