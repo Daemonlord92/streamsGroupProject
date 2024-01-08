@@ -124,5 +124,20 @@ public class StudentOpsTest {
             Assertions.assertEquals("Melvyn".toUpperCase(), names.getLast());
         }
 
+        @Test
+        void shouldReturnAStudentWithTheCorrectId() {
+            Student student = StudentOps.findStudentById(students, 345);
+            Assertions.assertEquals(345, student.getId());
+            student = StudentOps.findStudentById(students, 250);
+            Assertions.assertEquals(250, student.getId());
+        }
+
+        @Test
+        void shouldReturnNullIfIdOutOfBounds() {
+            Student student = StudentOps.findStudentById(students, 501);
+            Assertions.assertNull(student);
+            student = StudentOps.findStudentById(students, 700);
+            Assertions.assertNull(student);
+        }
     }
 
