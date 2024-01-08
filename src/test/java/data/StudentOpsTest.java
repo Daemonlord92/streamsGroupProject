@@ -91,5 +91,12 @@ public class StudentOpsTest {
             Assertions.assertEquals("Female", youngestStudent.getGender());
             Assertions.assertEquals(17, youngestStudent.getAge());
         }
+
+        @Test
+        void shouldReturnAStringWithFirstNamesInIt() {
+            String[] names = StudentOps.joinStudentsNames(students).split(" ");
+            Assertions.assertEquals("Kaitlyn", names[0]);
+            Assertions.assertEquals("Melvyn", names[names.length-1]);
+        }
     }
 
