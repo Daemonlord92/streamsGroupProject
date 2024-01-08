@@ -105,6 +105,12 @@ public class StudentOpsTest {
             Assertions.assertEquals(17553, sum);
         }
 
+        @Test
+        void shouldReturnFalseForCheckingStudentsAllAdults() {
+            boolean result = StudentOps.areAllStudentsAdult(students);
+            Assertions.assertFalse(result);
+        }
+
 
     }
 
