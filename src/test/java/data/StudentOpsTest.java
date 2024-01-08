@@ -111,6 +111,10 @@ public class StudentOpsTest {
             Assertions.assertFalse(result);
         }
 
-
+        @Test
+        void shouldReturnTheOldestStudent() {
+            Student student = StudentOps.findTheOldestStudent(students);
+            Assertions.assertEquals(54, student.getAge());
+        }
     }
 
